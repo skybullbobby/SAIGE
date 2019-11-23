@@ -11,14 +11,14 @@ print(sessionInfo())
 
 ## set list of cmd line arguments
 option_list <- list(
-  make_option("--plinkFile", type="character",default="",
+  make_option("--plinkFile", type="character",default="input/plinkforGRM_1000samples_10kMarkers",
     help="path to plink file for creating the genetic relationship matrix (GRM)"),
-    make_option("--nThreads", type="integer", default=16,
+    make_option("--nThreads", type="integer", default=6,
     help="Number of threads (CPUs) to use"),
   make_option("--memoryChunk", type="numeric", default=2,
    help="The size (Gb) for each memory chunk. By default, 2"),
-  make_option("--outputPrefix", type="character", default="~/",
-    help="path and prefix to the output files [default='~/']"),
+  make_option("--outputPrefix", type="character", default="output/",
+    help="path and prefix to the output files [default='output/']"),
   make_option("--numRandomMarkerforSparseKin", type="integer", default=2000,
     help="number of randomly selected markers to be used to identify related samples for sparse GRM [default=2000]"),
   make_option("--relatednessCutoff", type="numeric", default=0.125,

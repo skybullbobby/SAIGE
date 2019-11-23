@@ -86,7 +86,7 @@ test_stdGeno = function(subSampleInGeno){
 }
 
 
-#Fits the null glmm for binary traits
+# Fits the null glmm for binary traits
 glmmkin.ai_PCG_Rcpp_Binary = function(genofile, fit0, tau=c(0,0), fixtau = c(0,0), maxiter =20, tol = 0.02, verbose = TRUE, nrun=30, tolPCG = 1e-5, maxiterPCG = 500, subPheno, obj.noK, out.transform, tauInit, memoryChunk, LOCO, chromosomeStartIndexVec, chromosomeEndIndexVec, traceCVcutoff, isCovariateTransform, isDiagofKinSetAsOne) {
   #Fits the null generalized linear mixed model for a binary trait
   #Args:
