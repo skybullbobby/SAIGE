@@ -7,3 +7,8 @@ thirdParty/bgen/.hg
 src/*.o
 src/*.so
 extdata/output
+.Rhistory
+.Rproj.user/
+*.Rproj
+
+
